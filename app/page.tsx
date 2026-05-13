@@ -20,7 +20,7 @@ export default function HomePage() {
           <h1 className="font-serif text-5xl sm:text-7xl leading-[1.05] text-ink mb-8">
             Eine erste Einschätzung.
             <br />
-            <em className="text-accent">Bevor</em> Sie zur Anwältin gehen.
+            <em className="text-accent">Bevor</em> Sie zum Anwalt gehen.
           </h1>
           <p className="text-xl text-ink-soft leading-relaxed max-w-2xl">
             Wählen Sie ein Thema, beantworten Sie ein paar gezielte Fragen und
