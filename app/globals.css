@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    background-image:
+      radial-gradient(at 15% 10%, rgba(184, 68, 42, 0.05) 0px, transparent 50%),
+      radial-gradient(at 85% 90%, rgba(26, 34, 56, 0.06) 0px, transparent 50%);
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-3xl px-6;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+}
+
+/* sanfter Einblend-Effekt bei Fragewechseln */
+.fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
